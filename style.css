@@ -91,6 +91,63 @@ details summary {
     font-weight: 500;
 }
 
+.team-intro {
+    margin-top: -0.5rem;
+    color: #52616b;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 1.5rem;
+}
+
+.team-member {
+    padding: 1.25rem;
+    border: 1px solid #d9e7eb;
+    border-radius: 8px;
+    background: #f7fbfc;
+}
+
+.team-member h3 {
+    margin: 0.9rem 0 0.25rem;
+    color: #173c4a;
+}
+
+.team-member p {
+    margin: 0.5rem 0 0;
+    line-height: 1.5;
+}
+
+.team-member .team-role {
+    margin-top: 0;
+    color: #0077b6;
+    font-weight: 600;
+}
+
+.team-avatar {
+    display: grid;
+    width: 3.5rem;
+    aspect-ratio: 1;
+    place-items: center;
+    border-radius: 50%;
+    color: #173c4a;
+    font-weight: 700;
+}
+
+.avatar-coral {
+    background: #ffd4c8;
+}
+
+.avatar-teal {
+    background: #bde9df;
+}
+
+.avatar-gold {
+    background: #ffe7a8;
+}
+
 footer {
     text-align: center;
     padding: 1rem 0;
@@ -98,4 +155,16 @@ footer {
     color: #fff;
     margin-top: 2rem;
     border-radius: 0 0 12px 12px;
+}
+
+@media (max-width: 640px) {
+    nav ul {
+        flex-wrap: wrap;
+        gap: 0.75rem 1.25rem;
+        padding: 0 1rem;
+    }
+
+    .team-grid {
+        grid-template-columns: 1fr;
+    }
 }
